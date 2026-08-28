@@ -120,6 +120,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent); outline-of
 strong{font-weight:600; color:var(--ink)}
 code,.cite{
   font-family:"IBM Plex Mono",monospace; font-size:.86em;
+  overflow-wrap:anywhere;
   background:var(--surface-2); padding:.1em .35em; border-radius:2px;
   color:var(--ink-2);
 }
@@ -145,6 +146,29 @@ ol li::marker{font-family:"IBM Plex Mono",monospace; font-size:.85em; color:var(
 .trap .tag{color:var(--warn)}
 .never{border-color:var(--accent); background:var(--accent-soft)}
 .never .tag{color:var(--accent)}
+
+/* ---- state-specific block ---- */
+section.state::before{opacity:1; width:2px}
+section.state .snum{letter-spacing:.08em}
+.locale{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:600; color:var(--accent);
+  border:1px solid var(--accent); border-radius:2px; padding:.3rem .55rem;
+  margin-top:1.4rem;
+}
+.keyfact{
+  background:var(--surface); border:1px solid var(--accent);
+  border-left-width:3px; border-radius:0 3px 3px 0;
+  padding:1.1rem 1.25rem; margin:1.5rem 0; box-shadow:var(--shadow);
+}
+.keyfact .tag{
+  display:block; font-family:"IBM Plex Mono",monospace; font-size:.66rem;
+  letter-spacing:.14em; text-transform:uppercase; font-weight:600;
+  color:var(--accent); margin-bottom:.5rem;
+}
+.keyfact p:last-child{margin-bottom:0}
+.keyfact strong{font-size:1.02em}
 
 /* ---- gates ---- */
 .gate{
@@ -218,6 +242,7 @@ footer li{margin-bottom:.35rem}
   <p class="kicker">Consumer debt defense · Field manual</p>
   <h1>Answer first.<br>Then <em>arbitrate</em>.</h1>
   <p class="standfirst">Arbitration is a real weapon against debt buyers — but it fires only under four conditions, and it is not the thing that saves most people. Filing an answer is.</p>
+  <p><span class="locale">Tuned for Colorado · Boulder &amp; Jefferson County</span></p>
   <p class="defendants">MIDLAND FUNDING / MCM &nbsp;·&nbsp; CAVALRY SPV &nbsp;·&nbsp; VELOCITY INVESTMENTS<br>PORTFOLIO RECOVERY &nbsp;·&nbsp; LVNV / RESURGENT &nbsp;·&nbsp; JEFFERSON CAPITAL</p>
 </header>
 
@@ -248,6 +273,108 @@ footer li{margin-bottom:.35rem}
     </tbody>
   </table>
   </div>
+</section>
+
+<section class="state">
+  <span class="snum">CO</span>
+  <h2>Colorado, specifically</h2>
+  <p class="sub">Superior straddles the county line — most of the town is <strong>Boulder County</strong> (20th Judicial District, Justice Center at 1777 6th St, Boulder), a slice is <strong>Jefferson County</strong> (Golden). The caption on your summons says which.</p>
+
+  <h3>Which court decides everything</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Court</th><th>Limit</th><th>Attorneys</th><th>Yours?</th></tr></thead>
+    <tbody>
+      <tr><td>Small Claims Division</td><td>≤ $7,500</td><td>Presumptively <strong>barred</strong> — C.R.S. § 13-6-407</td><td class="v v-no">UNLIKELY</td></tr>
+      <tr><td><strong>County Court, civil</strong></td><td>≤ $25,000</td><td>Allowed</td><td class="v v-yes">LIKELY</td></tr>
+      <tr><td>District Court</td><td>&gt; $25,000</td><td>Allowed</td><td class="v v-part">LARGE ONLY</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="call go">
+    <span class="tag">This is good news for the arbitration play</span>
+    <p>Colorado’s small claims division bars attorney representation unless both sides have counsel, so collection firms file in the <strong>County Court civil division</strong> instead. County Court civil is <em>not</em> “small claims court” — so the small-claims carve-out that kills this strategy in other states <strong>probably does not reach your case.</strong></p>
+    <p>Still read the exact words. Some clauses carve out “courts of limited jurisdiction” or any case under a dollar threshold rather than saying “small claims.” Colorado County Court <em>is</em> a court of limited jurisdiction. That single sentence in the contract is the whole ballgame.</p>
+  </div>
+
+  <h3>Your deadline is a date, not a countdown</h3>
+  <div class="keyfact">
+    <span class="tag">Do this first</span>
+    <p><strong>County Court runs on the APPEARANCE DATE printed on your summons</strong> — C.R.C.P. 312. Not 21 days. Not 30. The date on the paper.</p>
+    <p>The 21-day figure everyone quotes online is <code>C.R.C.P. 12(a)</code>, which governs <strong>District</strong> Court and probably doesn’t apply to you. The appearance date can be set up to 63 days from issuance, and you must have been served at least 14 days before it — so if you were served late in that window, your real deadline may be about two weeks out.</p>
+    <p>Find the date. Calendar it. Set the alarm five days early.</p>
+  </div>
+
+  <p><strong>The form is free:</strong> <code>CRCCP Form 3</code>, “Answer Under Simplified Civil Procedure,” with instructions in <code>JDF 110</code>, at coloradojudicial.gov → Self-Help → Cases for $25,000 or Less. There’s a filing fee; ask the clerk about a <code>JDF 205</code> fee waiver if that’s a problem.</p>
+
+  <h3>Statute of limitations: six years, not three</h3>
+  <p><code>C.R.S. § 13-80-103.5(1)(a)</code> — six years for a “liquidated debt or an unliquidated, determinable amount of money.” Colorado courts treat credit card debt as liquidated. The “three years for contracts” figure circulating online is § 13-80-101 and does not govern card debt here. The clock runs from default, not from charge-off.</p>
+
+  <blockquote>
+    <p>“No acknowledgment or promise shall be evidence of a new or continuing contract sufficient to take a case out of the operation of the statute of limitations, unless it is in writing signed by the party to be charged; <strong>but this section shall not alter the effect of a payment of principal or interest.</strong>”</p>
+    <span class="src">C.R.S. § 13-80-113</span>
+  </blockquote>
+
+  <div class="call never">
+    <span class="tag">Read that clause twice</span>
+    <p>In Colorado, a verbal “yeah, that’s mine” doesn’t revive a dead debt — <strong>a payment can.</strong> Case law softens it (the payment must be voluntary, made and accepted, and accompanied by an unqualified acknowledgment that more is owed), but don’t test the edges. <strong>Do not pay anything on an account near or past six years old.</strong></p>
+  </div>
+
+  <h3>Colorado’s best local weapon: the license</h3>
+  <p>This defense doesn’t exist in most states, and it’s the first thing to check.</p>
+  <ul>
+    <li><code>C.R.S. § 5-16-118</code> — anyone acting as a collection agency in Colorado must hold a valid license from the Administrator: the <strong>Colorado Attorney General’s Consumer Credit Unit / Collection Agency Board.</strong></li>
+    <li><code>C.R.S. § 5-16-103</code> <strong>expressly defines debt buyers as collection agencies.</strong> Midland, Cavalry SPV, Velocity Investments — all of them need a Colorado license and a $12,000–$20,000 surety bond.</li>
+    <li>Exempt: attorneys (still bound by the CFDCPA’s substantive provisions) and original creditors collecting their own debts in their own name.</li>
+  </ul>
+  <p><strong>Look up the exact entity named as plaintiff on your summons</strong> at coag.gov → Consumer Protection → Consumer Credit Unit → Collection Agency Regulation. Not the parent company. <em>Midland Funding LLC</em> and <em>Midland Credit Management, Inc.</em> are different entities; <em>Cavalry SPV I, LLC</em> is not <em>Cavalry Portfolio Services, LLC</em>. Confirm the license was valid <strong>on the dates they were collecting from you</strong> — a lapse in the middle is its own violation.</p>
+
+  <div class="keyfact">
+    <span class="tag">Go through every letter they sent you</span>
+    <p>Colorado requires a collection agency’s <strong>initial written communication</strong> to carry this exact statement:</p>
+    <p><code>FOR INFORMATION ABOUT THE COLORADO FAIR DEBT COLLECTION PRACTICES ACT, SEE HTTPS://COAG.GOV/OFFICE-SECTIONS/CONSUMER-PROTECTION/CONSUMER-CREDIT-UNIT/COLLECTION-AGENCY-REGULATION/</code></p>
+    <p>Missing, or pointing at a dead URL? That’s a CFDCPA violation sitting in your file drawer.</p>
+  </div>
+
+  <p><strong>CFDCPA remedies</strong> — <code>C.R.S. § 5-16-113</code>: actual damages plus additional damages <strong>up to $1,000</strong>, with a <strong>one-year</strong> limitations period. You can’t recover under both the CFDCPA and the federal FDCPA for the same conduct, so pick the better vehicle — the federal act’s attorney-fee provision is usually stronger.</p>
+
+  <div class="call go">
+    <span class="tag">Leverage the federal route doesn’t give you</span>
+    <p>File a complaint with the <strong>Colorado AG’s Consumer Credit Unit.</strong> They don’t just receive complaints — <strong>they hold the license.</strong> A regulator that can suspend a debt buyer’s ability to operate in Colorado gets a very different quality of attention than a CFPB complaint does.</p>
+  </div>
+
+  <h3>Discovery works differently here — adjust the plan</h3>
+  <p>The discovery section below assumes district-court practice. County Court is not that. Under <strong>C.R.C.P. 316</strong>, discovery is available <strong>only by order of the court</strong>, requested <strong>at the pretrial conference</strong>. You cannot simply serve requests for production.</p>
+  <ol>
+    <li><strong>Appear on the appearance date and ask for a pretrial conference.</strong></li>
+    <li><strong>Request leave to conduct discovery, narrowly.</strong> Judges grant targeted requests far more readily than fishing expeditions. Name four things: the complete cardholder agreement and change-in-terms notices in effect at default; the full chain of assignment <em>specifically identifying this account number</em>; all monthly statements from opening to charge-off; the account-level data file behind the bill of sale.</li>
+    <li><strong>Subpoena duces tecum for trial</strong> if discovery is denied — you can still compel documents and witnesses to show up.</li>
+    <li><strong>Lean harder on trial objections.</strong> The plaintiff still has to prove its case with admissible evidence. In a limited-discovery forum, the hearsay-and-foundation attack on the robo-affidavit carries proportionally more of the weight.</li>
+  </ol>
+
+  <h3>Arbitration, Colorado edition</h3>
+  <p>Cite <strong>both</strong> authorities in the motion: <code>9 U.S.C. §§ 2, 3, 4</code> and <strong><code>C.R.S. § 13-22-207</code></strong>, the Colorado Revised Uniform Arbitration Act’s motion-to-compel provision.</p>
+  <p>§ 13-22-207 is friendlier than the federal statute in one respect worth quoting: it directs the court to stay the judicial proceeding <strong>while the motion to compel is pending</strong>, and to stay it again <strong>once arbitration is ordered</strong>. You get the stay in two places, not one. Combined with <em>Smith v. Spizzirri</em> on the federal side, ask for the stay expressly in your prayer for relief.</p>
+
+  <h3>If it goes badly — Colorado protects you better than most</h3>
+  <p>Worth knowing before you evaluate any settlement offer, because it sets your real downside.</p>
+  <p><strong>Wages</strong> — <code>C.R.S. § 13-54-104</code>. A judgment creditor takes the <em>lesser</em> of 20% of disposable earnings per pay period (federal law allows 25% — Colorado is tighter), or the amount by which weekly disposable earnings exceed <strong>40× the Colorado minimum wage</strong>. At the 2026 state wage of roughly $15.16/hr, about <strong>$606/week of disposable earnings is fully exempt</strong>. Verify the current figure — the state wage is indexed annually, and while Boulder County and the City of Boulder set higher local wages, the garnishment formula runs off the state number.</p>
+  <p><strong>Bank accounts</strong> — Colorado exempts roughly <strong>$2,500 cumulatively</strong> across depository accounts in your name. Confirm the current amount in <code>C.R.S. § 13-54-102</code>; the legislature has adjusted it recently.</p>
+
+  <div class="call trap">
+    <span class="tag">Trap — exemptions are not automatic</span>
+    <p>After a garnishment notice you have roughly <strong>10 days to file a written claim of exemption</strong> with the court. Miss it and the money goes, exemption or not. You can also ask the court at a hearing to exempt a <em>greater</em> share of your earnings if you need it to support yourself or your family.</p>
+  </div>
+
+  <h3>Boulder County resources</h3>
+  <ul>
+    <li><strong>Colorado Legal Services</strong>, Boulder office — income-qualified free civil legal help.</li>
+    <li><strong>Boulder County Bar Association</strong> legal clinics / Ask-a-Lawyer nights.</li>
+    <li><strong>Boulder County Justice Center self-help center</strong>, 1777 6th St — clerks can’t give legal advice but will tell you which form and where it goes.</li>
+    <li><strong>coloradojudicial.gov → Self-Help</strong> — CRCCP Form 3, JDF 110, JDF 205 fee waiver.</li>
+    <li><strong>coag.gov</strong> — license lookup, and the complaint that actually has teeth.</li>
+  </ul>
 </section>
 
 <section>

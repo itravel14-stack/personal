@@ -355,3 +355,208 @@ If you decide to settle, negotiate from the actual numbers:
 - Public Citizen, *Regaining the Right to Reject: Forced Arbitration Clauses in Credit Card Contracts* — https://www.citizen.org/wp-content/uploads/Right-to-Reject.pdf
 - CreditCards.com, *Mandatory arbitration: Most credit cards allow a way out* — https://www.creditcards.com/statistics/avoid-arbitration-study/
 - FTC, *Repairing a Broken System: Protecting Consumers in Debt Collection Litigation and Arbitration* — https://www.ftc.gov/sites/default/files/documents/reports/federal-trade-commission-bureau-consumer-protection-staff-report-repairing-broken-system-protecting/debtcollectionreport.pdf
+
+---
+
+# COLORADO ADDENDUM — Superior, CO (Boulder / Jefferson County)
+
+Superior straddles the county line. Most of the town is **Boulder County** (20th Judicial
+District — Boulder County Justice Center, 1777 6th St, Boulder); a slice is **Jefferson
+County** (1st Judicial District — Golden). Check the caption on your summons for which one.
+
+## CO-1. Which court you're in decides everything
+
+| Court | Limit | Attorneys | Likely your case? |
+|---|---|---|---|
+| **Small Claims Division** | ≤ $7,500 | Presumptively **barred** — C.R.S. § 13-6-407 | Almost certainly not |
+| **County Court, civil** | ≤ $25,000 | Allowed | **Yes — this is where debt buyers file** |
+| **District Court** | > $25,000 | Allowed | Only on large balances |
+
+**This is good news for the arbitration play.** Colorado's small claims division bars
+attorney representation unless both sides have counsel, so collection firms file in the
+**County Court civil division** instead. County Court civil is *not* "small claims court" —
+which means the small-claims carve-out in most arbitration clauses **probably does not
+apply to your case.**
+
+> Still read the clause. Some are drafted to carve out "courts of limited jurisdiction" or
+> any case under a dollar threshold, not just the words "small claims." Colorado County
+> Court is a court of limited jurisdiction. That distinction is the whole ballgame — read
+> the exact words before you file.
+
+## CO-2. Your deadline is a DATE, not a countdown
+
+This is the single most important Colorado-specific fact and the easiest way to default.
+
+- **District Court:** 21 days after service (C.R.C.P. 12(a)). This is the number everyone
+  quotes — and it probably doesn't apply to you.
+- **County Court:** under **C.R.C.P. 312**, you answer **on or before the APPEARANCE DATE
+  printed on the summons.** Not 21 days. Not 30. The date on the paper.
+  - The appearance date can be up to 63 days from issuance of the summons.
+  - You must have been served at least 14 days before it.
+  - If you were served close to the date, your window may be as short as two weeks.
+
+**Do this now:** find the appearance date on the summons, calendar it, and set an alarm
+five days earlier.
+
+**Form:** Colorado publishes the answer form — **CRCCP Form 3, "Answer Under Simplified
+Civil Procedure."** Instructions are in **JDF 110**. Both are free at
+coloradojudicial.gov → Self-Help → Cases for $25,000 or Less. There is a filing fee; ask
+the clerk about a **JDF 205 fee waiver** if money is tight.
+
+## CO-3. Statute of limitations: six years
+
+- **C.R.S. § 13-80-103.5(1)(a)** — six years for a "liquidated debt or an unliquidated,
+  determinable amount of money." Colorado courts treat credit card debt as liquidated.
+- Ignore the "three years for contracts" figure floating around online (§ 13-80-101) —
+  it does not govern card debt here.
+- Runs from **default / when the cause of action accrued**, not from charge-off.
+
+### Revival — C.R.S. § 13-80-113
+
+> "No acknowledgment or promise shall be evidence of a new or continuing contract
+> sufficient to take a case out of the operation of the statute of limitations, unless it
+> is in writing signed by the party to be charged; **but this section shall not alter the
+> effect of a payment of principal or interest.**"
+
+Read that clause carefully. **A verbal "yeah, that's mine" doesn't revive it — a payment
+can.** Colorado case law softens it somewhat: the payment must be voluntary, made by the
+debtor and accepted by the creditor, and accompanied by circumstances amounting to an
+unqualified acknowledgment that more is owed. Don't test the edges. **Do not pay anything
+on an account near or past six years.**
+
+## CO-4. Colorado's best local weapon: the license
+
+This is the defense that doesn't exist in most states, and it's the first thing to check.
+
+- **C.R.S. § 5-16-118:** any person acting as a collection agency in Colorado must hold a
+  valid license issued by the Administrator (the **Colorado Attorney General's Consumer
+  Credit Unit / Collection Agency Board**).
+- **C.R.S. § 5-16-103 expressly defines debt buyers as collection agencies.** Midland,
+  Cavalry SPV, Velocity Investments — all of them need a Colorado license. Debt buyers also
+  post a surety bond of $12,000–$20,000.
+- Exempt: attorneys (still bound by the CFDCPA's substantive provisions), and original
+  creditors collecting their own debts in their own name.
+
+**Check the license.** Go to coag.gov → Consumer Protection → Consumer Credit Unit →
+Collection Agency Regulation, and look up the exact entity named as plaintiff on your
+summons — not the parent company. *Midland Funding LLC* and *Midland Credit Management,
+Inc.* are different entities; *Cavalry SPV I, LLC* is not *Cavalry Portfolio Services, LLC*.
+Confirm the license was valid **on the dates they were collecting from you**, not just
+today. A lapse in the middle is a violation.
+
+### The disclosure requirement — check every letter you got
+
+Colorado requires a collection agency's **initial written communication** to contain this
+statement:
+
+> FOR INFORMATION ABOUT THE COLORADO FAIR DEBT COLLECTION PRACTICES ACT, SEE
+> HTTPS://COAG.GOV/OFFICE-SECTIONS/CONSUMER-PROTECTION/CONSUMER-CREDIT-UNIT/COLLECTION-AGENCY-REGULATION/
+
+Pull out every letter they sent you and look for it. If it's missing or points to a dead
+URL, that's a CFDCPA violation sitting in your file drawer.
+
+### CFDCPA remedies — C.R.S. § 5-16-113
+
+- Actual damages, plus additional damages **up to $1,000**.
+- **One year** from the date of the violation.
+- **No double-dipping:** you cannot recover under both the CFDCPA and the federal FDCPA for
+  the same conduct. Pick the better vehicle; the federal act's attorney-fee provision is
+  usually the stronger one.
+
+### The leverage the federal route doesn't give you
+
+**File a complaint with the Colorado AG's Consumer Credit Unit.** They don't just take
+complaints — **they hold the license.** A regulator that can suspend a debt buyer's ability
+to operate in Colorado gets a different quality of attention than a CFPB complaint does.
+
+## CO-5. Discovery works differently here — adjust the plan
+
+The discovery playbook in the main document assumes district-court practice. **County Court
+is not that.**
+
+Under **C.R.C.P. 316**, discovery in county court is available **only by order of the
+court**, and the request is made **at the pretrial conference**. You cannot simply serve
+requests for production the way you would in district court.
+
+**What to do instead:**
+
+1. **Show up on the appearance date and ask for a pretrial conference.**
+2. **Request leave to conduct discovery, and be specific.** Judges grant narrow, targeted
+   requests far more readily than fishing expeditions. Name the four things:
+   - The complete cardholder agreement and all change-in-terms notices in effect at default
+   - The full chain of assignment documents **specifically identifying this account number**
+   - All monthly statements from account opening to charge-off
+   - The account-level data file supporting the bill of sale
+3. **Subpoena duces tecum for trial** if discovery is denied — you can still compel
+   documents and witnesses to appear.
+4. **Lean harder on trial objections.** In county court, the plaintiff still has to *prove*
+   its case with admissible evidence. Object to the robo-affidavit and the statements as
+   **hearsay without foundation** — the affiant never worked at the originating bank and
+   has no personal knowledge of how those records were made or kept. In a limited-discovery
+   forum, this objection carries proportionally more of the weight.
+
+## CO-6. Arbitration, Colorado edition
+
+Cite **both** authorities in your motion:
+
+- **Federal:** 9 U.S.C. §§ 2, 3, 4
+- **Colorado:** **C.R.S. § 13-22-207** (Colorado Revised Uniform Arbitration Act) — "Motion
+  to compel or stay arbitration"
+
+§ 13-22-207 is friendlier than the federal statute in one respect worth quoting in your
+motion: it directs that **the court shall stay the judicial proceeding while the motion to
+compel is pending**, and shall stay it again once arbitration is ordered. So you get a stay
+in two places, not one.
+
+Combined with *Smith v. Spizzirri* (2024) on the federal side, **expressly request the stay
+in your prayer for relief** — not dismissal.
+
+## CO-7. If it goes badly — Colorado protects you better than most
+
+Worth knowing before you evaluate any settlement offer, because it sets your real downside.
+
+**Wages — C.R.S. § 13-54-104.** A judgment creditor may take the **lesser** of:
+- 20% of disposable earnings per pay period *(federal law allows 25% — Colorado is tighter)*, or
+- the amount by which weekly disposable earnings exceed **40× the Colorado minimum wage**
+
+At Colorado's 2026 state minimum wage (roughly $15.16/hr), that floor is about **$606/week
+of disposable earnings fully exempt**. Verify the current figure — the state wage is
+indexed annually. *(Boulder County and the City of Boulder set higher local minimum wages,
+but the garnishment formula runs off the state figure.)*
+
+**Bank accounts.** Colorado exempts roughly **$2,500 cumulatively** across depository
+accounts in your name. Verify the current amount in C.R.S. § 13-54-102 — the legislature
+has adjusted it recently.
+
+**You must claim it.** Exemptions are not automatic. After a garnishment notice you have
+about **10 days to file a written claim of exemption** with the court. Miss it and the
+money goes.
+
+You can also ask the court at a hearing to exempt a **greater** portion of your earnings if
+you need it to support yourself or your family.
+
+## CO-8. Boulder County resources
+
+- **Colorado Legal Services** — Boulder office. Income-qualified free civil legal help.
+- **Boulder County Bar Association** legal clinics / Ask-a-Lawyer nights.
+- **Boulder County Justice Center self-help center**, 1777 6th St, Boulder — clerks can't
+  give legal advice but will tell you which form and where it goes.
+- **coloradojudicial.gov → Self-Help** — CRCCP Form 3, JDF 110, JDF 205 fee waiver.
+- **Colorado AG Consumer Credit Unit** (coag.gov) — license lookup and the complaint that
+  actually has teeth.
+- **NACA** (consumeradvocates.org) — Colorado consumer attorneys who take FDCPA/CFDCPA cases
+  on contingency and often defend the collection suit as part of it.
+
+## Colorado sources
+
+- C.R.S. § 13-80-103.5 (six-year limitation) — https://law.justia.com/codes/colorado/title-13/limitation-of-actions/article-80/section-13-80-103-5/
+- C.R.S. § 13-80-113 (new promise; effect of payment) — https://law.justia.com/codes/colorado/title-13/limitation-of-actions/article-80/section-13-80-113/
+- C.R.S. § 13-22-207 (motion to compel or stay arbitration) — https://colorado.public.law/statutes/crs_13-22-207
+- C.R.S. § 13-54-104 (garnishment restrictions) — https://law.justia.com/codes/colorado/title-13/judgments-and-executions/article-54/section-13-54-104/
+- C.R.S. § 5-16-113 (CFDCPA civil liability) — https://law.justia.com/codes/colorado/title-5/debt-management/article-16/section-5-16-113/
+- C.R.S. § 5-16-119 (collection agency license) — https://law.justia.com/codes/colorado/title-5/debt-management/article-16/section-5-16-119/
+- Colorado AG, Collection Agency Regulation — https://coag.gov/licensing/collection-agency-regulation/
+- Colorado Rules of County Court Civil Procedure 301–420 (Rules 312, 316) — https://checkerboard.co/CB2/13_LTE/CRCCCP_301-420.pdf
+- CRCCP Form 3, Answer Under Simplified Civil Procedure — https://www.coloradojudicial.gov/sites/default/files/2025-04/Form3.pdf
+- JDF 110, Instructions for a County Court Civil Case — https://www.coloradojudicial.gov/sites/default/files/2023-07/JDF%20110%20Instructions%20for%20County%20Civil%20-%20Money.pdf
+- Colorado Judicial, Cases for $25,000 or Less — https://www.coloradojudicial.gov/self-help/cases-25000-or-less
